@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 280px;
+  height: 650px;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.image-mobile {
+  width: 280px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.transparency-mobile {
+	background-color: hsla(277, 64%, 61%, 0.6);
+	width: 280px;
+	height: 206px;
+	border-radius: 10px 10px 0px 0px;
+	position: absolute;
+}
+
+.image-desktop {
+  display: none;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px 20px 0px 20px;
+}
+
+h1 span {
+  color: hsl(277, 64%, 61%);
+  font-size: 1.6rem;
+}
+
+.stats {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+#description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 20px 20px 20px 20px;
+  line-height: 20px;
+}
+
+.stats-text {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 4px;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+.attribution {
+	color: hsl(0, 0%, 100%);
+  font-size: 11px;
+  text-align: center;
+	font-family: "Inter", sans-serif;
+	padding-top: 60px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+	font-size: 11px;
+}
+
+@media screen and (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+
+	.container {
+		width: 1000px;
+		height: 413px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.image-desktop {
+		display: block;
+		width: 500px;
+		height: 100%;
+		border-radius: 0px 10px 10px 0px;
+	}
+
+	.stats-box {
+		display: flex;
+	}
+
+	h1 {
+		font-size: 2.4rem;
+		padding: 60px 60px 0px 60px ;
+		text-align: left;
+	}
+
+	h1 span {
+		font-size: 2.4rem;
+	}
+
+	#description {
+		text-align: left;
+		padding: 30px 100px 0px 60px;
+		line-height: 25px;
+	}
+
+	.stats-text {
+		text-align: left;
+		padding: 0px;
+		padding-top: 5px;
+	}
+
+	.stats {
+		text-align: left;
+	}
+
+	.wrapper {
+		padding-left: 60px;
+		padding-top: 60px;
+	}
+
+	.transparency-desktop {
+		background-color: hsla(277, 64%, 61%, 0.6);
+		width: 500px;
+		height: 413px;
+		position: absolute;
+		border-radius: 0px 10px 10px 0px;
+	}
+}
